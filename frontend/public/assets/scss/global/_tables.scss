@@ -1,0 +1,148 @@
+  /****** React-Table Styles:-Start *****/
+
+button.gridjs-sort {
+    float: right;
+    height: 24px;
+    width: 13px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-size: contain;
+  }
+  button.gridjs-sort-desc {
+    background-position-y: 54%!important;
+    background-size: 0.5rem!important;
+  }
+  button.gridjs-sort-asc {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyOTIuMzYycHgiIGhlaWdodD0iMjkyLjM2MXB4IiB2aWV3Qm94PSIwIDAgMjkyLjM2MiAyOTIuMzYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTIuMzYyIDI5Mi4zNjE7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yODYuOTM1LDE5Ny4yODdMMTU5LjAyOCw2OS4zODFjLTMuNjEzLTMuNjE3LTcuODk1LTUuNDI0LTEyLjg0Ny01LjQyNHMtOS4yMzMsMS44MDctMTIuODUsNS40MjRMNS40MjQsMTk3LjI4NwoJCUMxLjgwNywyMDAuOTA0LDAsMjA1LjE4NiwwLDIxMC4xMzRzMS44MDcsOS4yMzMsNS40MjQsMTIuODQ3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI1LDEyLjg1LDUuNDI1aDI1NS44MTMKCQljNC45NDksMCw5LjIzMy0xLjgwOCwxMi44NDgtNS40MjVjMy42MTMtMy42MTMsNS40MjctNy44OTgsNS40MjctMTIuODQ3UzI5MC41NDgsMjAwLjkwNCwyODYuOTM1LDE5Ny4yODd6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+);
+    background-position-y: 35%;
+    background-size: 10px;
+  }
+  th.gridjs-th .gridjs-th-content {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // width: 100%;
+    float: left;
+  }
+  th.gridjs-th {
+    position: relative;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-top: none;
+    padding: 14px 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+  }
+  button.gridjs-sort-neutral {
+    opacity: .3;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI0MDEuOTk4cHgiIGhlaWdodD0iNDAxLjk5OHB4IiB2aWV3Qm94PSIwIDAgNDAxLjk5OCA0MDEuOTk4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MDEuOTk4IDQwMS45OTg7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik03My4wOTIsMTY0LjQ1MmgyNTUuODEzYzQuOTQ5LDAsOS4yMzMtMS44MDcsMTIuODQ4LTUuNDI0YzMuNjEzLTMuNjE2LDUuNDI3LTcuODk4LDUuNDI3LTEyLjg0NwoJCQljMC00Ljk0OS0xLjgxMy05LjIyOS01LjQyNy0xMi44NUwyMTMuODQ2LDUuNDI0QzIxMC4yMzIsMS44MTIsMjA1Ljk1MSwwLDIwMC45OTksMHMtOS4yMzMsMS44MTItMTIuODUsNS40MjRMNjAuMjQyLDEzMy4zMzEKCQkJYy0zLjYxNywzLjYxNy01LjQyNCw3LjkwMS01LjQyNCwxMi44NWMwLDQuOTQ4LDEuODA3LDkuMjMxLDUuNDI0LDEyLjg0N0M2My44NjMsMTYyLjY0NSw2OC4xNDQsMTY0LjQ1Miw3My4wOTIsMTY0LjQ1MnoiLz4KCQk8cGF0aCBkPSJNMzI4LjkwNSwyMzcuNTQ5SDczLjA5MmMtNC45NTIsMC05LjIzMywxLjgwOC0xMi44NSw1LjQyMWMtMy42MTcsMy42MTctNS40MjQsNy44OTgtNS40MjQsMTIuODQ3CgkJCWMwLDQuOTQ5LDEuODA3LDkuMjMzLDUuNDI0LDEyLjg0OEwxODguMTQ5LDM5Ni41N2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOHM5LjIzMy0xLjgxMSwxMi44NDctNS40MjhsMTI3LjkwNy0xMjcuOTA2CgkJCWMzLjYxMy0zLjYxNCw1LjQyNy03Ljg5OCw1LjQyNy0xMi44NDhjMC00Ljk0OC0xLjgxMy05LjIyOS01LjQyNy0xMi44NDdDMzM4LjEzOSwyMzkuMzUzLDMzMy44NTQsMjM3LjU0OSwzMjguOTA1LDIzNy41NDl6Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+);
+    background-position-y: center;
+  }
+  th.gridjs-th-fixed {
+    position: sticky;
+    box-shadow: 0 1px #e5e7eb;
+  }
+  .gridjs-head {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px 1px;
+  }
+  .gridjs-footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    padding: 12px 24px;
+    border-top: 1px solid #e5e7eb;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px #00000042;
+    border-radius: 0 0 8px 8px;
+    border-bottom-width: 1px;
+    border-color: #e5e7eb;
+  }
+  .gridjs-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px #00000042;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    border-top-width: 1px;
+    border-color: #e5e7eb;
+  }
+  .tabulator .tabulator-header {
+    border-bottom: 1px solid $default-border;
+}
+.selectpage{
+  background: $default-background;
+  color: $default-text-color;
+  padding: 6px;
+  border-radius: 3px;
+}
+[dir="rtl"] {
+  th.gridjs-th .gridjs-th-content {
+    float: right;
+  }
+}
+.tabulator .tabulator-header {
+  border-bottom: 1px solid $default-border !important;
+}
+.tabulator .tabulator-row.tabulator-selectable:hover {
+  background-color: $default-background !important;
+  cursor: pointer;
+}
+.gridjs-td.gridjs-message.gridjs-notfound{
+  text-align: center !important;
+}
+@media (max-width: 490px) {
+  .rodal-dialog {
+      width: 300px !important;
+      height: 293px !important;
+  }
+    .card-sigin{
+        padding: 20px !important
+    }
+    iframe{
+      width: 100%;
+    }
+    .MuiSvgIcon-root.MuiSvgIcon-fontSizeInherit{
+      width: 1.6rem;
+    }
+    .apexcharts-title-text {
+      font-size: 0.73rem;
+      font-weight: normal;
+  }
+  .fc-scrollgrid-sync-table, .fc-view-harness.fc-view-harness-active{
+    height: 41rem !important;
+  }
+}
+.Gaming-Countries {
+  .world__wrapper {
+    height: 320px !important;
+  }
+}
+.gridjs-container .gridjs-wrapper .gridjs-thead .gridjs-tr th{
+  min-width: 150px !important;
+}
+@media (min-width: 992px) {
+  [data-vertical-style=doublemenu] .app-sidebar .simplebar-content-wrapper {
+      position: static !important;
+      overflow: auto !important;
+      height: 100%  !important;
+  }
+}
+  /****** React-Table Styles:-End *****/

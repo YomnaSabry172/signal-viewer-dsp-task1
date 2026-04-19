@@ -1,0 +1,137 @@
+/**
+ * Dark Mode Fixes - Team#16 Signal Viewer
+ * Overrides for pleasant UI in dark mode: colors, contrast, alignment
+ */
+
+/* bg-light: use subtle dark surface in dark mode */
+[data-theme-mode=dark] .bg-light {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Card headers */
+[data-theme-mode=dark] .card .card-header.bg-light,
+[data-theme-mode=dark] .custom-card .card-header.bg-light {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* text-dark becomes light in dark mode */
+[data-theme-mode=dark] .text-dark {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Table: dark surface for headers */
+[data-theme-mode=dark] .table-light,
+[data-theme-mode=dark] thead.table-light,
+[data-theme-mode=dark] .table thead.table-light th {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme-mode=dark] .table.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme-mode=dark] .table.table-hover > tbody > tr:hover > * {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* text-muted: softer for dark mode */
+[data-theme-mode=dark] .main-content .text-muted,
+[data-theme-mode=dark] .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Form controls */
+[data-theme-mode=dark] .form-select,
+[data-theme-mode=dark] .form-control {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme-mode=dark] .form-select:focus,
+[data-theme-mode=dark] .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(var(--primary-rgb), 0.5);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Cards: readable body text */
+[data-theme-mode=dark] .card.custom-card .card-body,
+[data-theme-mode=dark] .card .card-body {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Alerts */
+[data-theme-mode=dark] .alert {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme-mode=dark] .alert-warning {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: rgba(255, 253, 231, 0.95);
+}
+
+[data-theme-mode=dark] .alert-success {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: rgba(220, 252, 231, 0.95);
+}
+
+[data-theme-mode=dark] .alert-danger {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: rgba(254, 226, 226, 0.95);
+}
+
+/* Badge visibility */
+[data-theme-mode=dark] .badge.bg-secondary {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Button outline secondary */
+[data-theme-mode=dark] .btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme-mode=dark] .btn-outline-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Page headings */
+[data-theme-mode=dark] .main-content h4,
+[data-theme-mode=dark] .main-content h5,
+[data-theme-mode=dark] .main-content h6 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Consistent spacing / alignment - match Bootstrap gutter to avoid extra left space */
+[data-theme-mode=dark] .main-content .container-fluid {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  [data-theme-mode=dark] .main-content .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ECG Viewer: align left column and viewer - reduce gutter, consistent alignment */
+.main-content .container-fluid:has(.ecg-viewer-page) {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .main-content .container-fluid:has(.ecg-viewer-page) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "class_names": [
+    "Healthy controls",
+    "Myocardial infarction",
+    "Cardiomyopathy/Heart failure",
+    "Bundle branch block",
+    "Dysrhythmia",
+    "Myocardial hypertrophy",
+    "Valvular heart disease",
+    "Myocarditis",
+    "Miscellaneous"
+  ]
+}

@@ -1,0 +1,127 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project                            :   Team#16 - Signal Viewer & DSP Application
+Create Date                        :   06-06-2024
+Author & Copyright Ownership       :   Team#16 
+------------------------------------------------------------------*/
+
+/* Table Of Content 
+variables
+switcher
+accordion
+alerts
+badges
+Breadcrumb
+Button
+card
+dropdown
+forms
+input_group
+list_group
+modals
+navbar
+navs_tabs
+pagination
+popovers
+progress
+tables
+toast
+tooltips
+authentication
+custom
+dashboard_styles
+error
+header
+plugins
+widgets
+sign-up
+closed_menu
+detached_menu
+double_menu
+horizontal
+icon_click
+icon_hover
+icon_overlay
+icontext
+menu_click
+menu_hover
+vertical
+chat
+ecommerce
+file-manager
+landing
+mail
+ribbons
+task
+avatars
+background
+border
+opacity
+typography
+*/
+
+
+/* FONT */
+/* Rajdhani */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+@import "variables";
+@import "switcher";
+@import "bootstrap";
+
+/* BOOTSTRAP */
+@import "bootstrap/accordion";
+@import "bootstrap/alerts";
+@import "bootstrap/badge";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/buttons";
+@import "bootstrap/cards";
+@import "bootstrap/dropdown";
+@import "bootstrap/forms";
+@import "bootstrap/input_group";
+@import "bootstrap/list_group";
+@import "bootstrap/modals";
+@import "bootstrap/navbar";
+@import "bootstrap/navs_tabs";
+@import "bootstrap/pagination";
+@import "bootstrap/popovers";
+@import "bootstrap/progress";
+@import "bootstrap/tables";
+@import "bootstrap/toast";
+@import "bootstrap/tooltips";
+
+/* CUSTOM */
+@import "custom/custom";
+@import "custom/plugins";
+
+/* MENU-STYLES */
+@import "menu-styles/closed_menu";
+@import "menu-styles/detached_menu";
+@import "menu-styles/double_menu";
+@import "menu-styles/horizontal";
+@import "menu-styles/icon_click";
+@import "menu-styles/icon_hover";
+@import "menu-styles/icon_overlay";
+@import "menu-styles/icontext";
+@import "menu-styles/menu_click";
+@import "menu-styles/menu_hover";
+@import "menu-styles/vertical";
+
+/* PAGES */
+
+
+/* UTILITIES */
+@import "util/avatars";
+@import "util/background";
+@import "util/border";
+@import "util/opacity";
+@import "util/typography";
+
+/* GLOBAL */
+
+@import "global/select2";
+@import "global/date-picker";
+@import "global/tables";
+@import "global/custom-styles";

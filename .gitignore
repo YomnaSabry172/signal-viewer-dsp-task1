@@ -1,0 +1,20 @@
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Audio samples and datasets (do not upload large audio files)
+Binary_Drone_Audio/
+drone_detector/Binary_Drone_Audio/
+drone_detector/Binary_Drone/
+**/Binary_Drone*/
+samples/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
